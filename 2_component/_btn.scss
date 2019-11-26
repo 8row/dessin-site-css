@@ -1,0 +1,46 @@
+@mixin btn {
+    font-weight: bold;
+    color: $color-key;
+    display: block;
+    padding: $sp-common-margin / 2;
+    font-size: 1rem;
+    text-align: center;
+    @include pc-media-queris {
+        padding: $pc-common-margin / 2;
+    };
+}
+.c-btn {
+    &--primary {
+        @include btn;
+        color: $color-key;
+        background-color: #fff;
+    }
+    &--secondary {
+        @include btn;
+        color: #fff;
+        background-color: $color-base;
+    }
+}
+/*
+.btn {
+  display: inline-block;
+  padding: 0.6em 1em;
+  border: 2px solid #333;
+  border-radius: 2em;
+  box-shadow: 3px 4px rgba(51, 51, 51, 0.15);
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn_highlighted {
+  border: none;
+  background-color: #55C299;
+  box-shadow: none;
+  color: white;
+  font-weight: bold;
+}
+.btn_menuitem {
+  padding: 0.3em 1em;
+}
+*/

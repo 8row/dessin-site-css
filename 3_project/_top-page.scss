@@ -1,0 +1,57 @@
+.p-top-page {
+    background-color: $color-base;
+    color: #fff;
+
+    &__main-img {
+        width: 100%;
+    }
+
+    &__text {
+        padding: $sp-common-margin;
+        margin-bottom: -$sp-common-margin;
+        font-weight: bold;
+
+        @include pc-media-queris {
+            padding: $pc-common-margin;
+            margin-bottom: -$pc-common-margin;
+        }
+    }
+
+    &__new-work {
+        width: 50%;
+        margin-left: 25%;
+        position: relative;
+        display: block;
+
+        @include pc-media-queris {
+            width: 30%;
+            margin-left: 35%;
+        }
+    }
+
+    &__new-work-icon {
+        margin-top: $sp-common-margin;
+        margin-left: 22%;
+        position: relative;
+        width: 14%;
+        z-index: 200;
+
+        @include pc-media-queris {
+            margin-top: $pc-common-margin;
+            width: 10%;
+            margin-left: 32%;
+        }
+    }
+
+    &__new-work-img {
+        width: 100%;
+        margin-top: -20px;
+        
+        @include pc-media-queris {
+        }
+    }
+
+    @include pc-media-queris {
+        padding-top: $pc-common-margin;
+    }
+}

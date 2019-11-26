@@ -1,0 +1,10 @@
+.fb {
+    font-weight: bold;
+}
+
+.pc-only {
+    display: none;
+    @include pc-media-queris {
+        display: block;
+    }
+}

@@ -1,0 +1,15 @@
+.l-header {
+    width: 100%;
+    background-color: $color-base;
+    padding: $sp-common-margin;
+    &__logo {
+        @include pc-media-queris {
+            display: block;
+            width: $pc-width;
+            margin: 0 auto;
+        }
+    }
+    @include pc-media-queris {
+        padding: $pc-common-margin;
+    };
+}

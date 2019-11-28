@@ -1,0 +1,22 @@
+/**
+ * Video
+ */
+
+.c-video {
+  margin: $sp-common-margin 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  @include pc-media-queris {
+    padding-bottom: 0;
+    margin: 0 auto;
+    width: $pc-medium-width;
+    height: 250px;
+  }
+}
+.c-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

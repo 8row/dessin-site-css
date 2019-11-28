@@ -1,0 +1,37 @@
+/**
+ * Gadget
+ */
+
+.c-gadget {
+  position: fixed;
+  bottom: $sp-common-margin;
+  right: $sp-common-margin;
+  @include pc-media-queris {
+    margin-left: $pc-width - $pc-gadget-width;
+    bottom: $pc-common-margin;
+    right: auto;
+  }
+
+  &__page-top {
+    margin-top: $sp-common-margin / 4;
+    display: block;
+
+    > img {
+      width: $sp-gadget-width;
+      @include pc-media-queris {
+        width: $pc-gadget-width;
+      }
+    }
+  }
+
+  &__zoom {
+    @include pc-only;
+    width: $pc-gadget-width;
+    cursor: pointer;
+    transition: 0.2s;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

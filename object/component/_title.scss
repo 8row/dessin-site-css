@@ -1,0 +1,18 @@
+/**
+ * Title
+ */
+
+.c-title {
+  line-height: 1.6;
+  color: $color-key;
+  text-align: center;
+  font: {
+    weight: bold;
+    size: 1.4rem;
+  }
+  margin: $sp-common-margin 0;
+
+  @include pc-media-queris {
+    margin: $pc-common-margin 0;
+  }
+}

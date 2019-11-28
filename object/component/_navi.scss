@@ -1,0 +1,36 @@
+/**
+ * Navi
+ */
+
+.c-navi {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    @include pc-media-queris {
+      width: $pc-width;
+      margin: 0 auto;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    width: 44vw;
+    margin-top: $sp-common-margin;
+    @media screen and (resolution: 1dppx) {
+      width: calc(44vw - 10px); //PCブラウザのスクロールバー分マイナス
+    }
+    @include pc-media-queris {
+      width: 22%;
+      margin-top: $pc-common-margin;
+    }
+
+    &:nth-of-type(1),
+    &:nth-of-type(3) {
+      margin-right: $sp-common-margin;
+      @include pc-media-queris {
+        margin-right: 0;
+      }
+    }
+  }
+}

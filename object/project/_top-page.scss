@@ -1,0 +1,58 @@
+/**
+ * Top page
+ */
+
+.p-top-page {
+  background-color: $color-base;
+  color: #fff;
+
+  @include pc-media-queris {
+    padding-top: $pc-common-margin;
+
+    > .l-main {
+      padding-bottom: 0;
+    }
+  }
+
+  &__main-img {
+    width: 100%;
+  }
+
+  &__text {
+    padding: $sp-common-margin;
+    font-weight: bold;
+    text-align: justify;
+    @include pc-media-queris {
+      padding: 0 ($pc-common-margin * 4);
+    }
+  }
+
+  &__new-work {
+    width: 50%;
+    margin-left: 25%;
+    position: relative;
+    display: block;
+    @include pc-media-queris {
+      width: 30%;
+      margin-left: 35%;
+    }
+  }
+
+  &__new-work-icon {
+    margin-top: $sp-common-margin;
+    margin-left: 22%;
+    position: relative;
+    width: 14%;
+    z-index: 100;
+    @include pc-media-queris {
+      margin-top: $pc-common-margin;
+      width: 10%;
+      margin-left: 32%;
+    }
+  }
+
+  &__new-work-img {
+    width: 100%;
+    margin-top: -20px;
+  }
+}

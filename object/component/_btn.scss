@@ -1,0 +1,73 @@
+/**
+ * Btn
+ */
+
+.c-btn {
+  padding: $sp-common-margin / 2;
+  width: 100%;
+  display: block;
+  color: $color-key;
+  font: {
+    weight: bold;
+    size: 1rem;
+  }
+  text-align: center;
+  @include pc-media-queris {
+    padding: $pc-common-margin / 2;
+  }
+
+  &--gnav {
+    color: $color-key;
+    background-color: #fff;
+  }
+
+  &--forward,
+  &--back {
+    position: relative;
+    color: #fff;
+    background-color: $color-base;
+  }
+
+  &--forward {
+    &::after {
+      content: "";
+      position: absolute;
+      top: $sp-common-margin / 2;
+      right: $sp-common-margin / 2;
+      height: 1.6rem;
+      width: 1rem;
+      display: inline-block;
+      background: {
+        image: url(../img/arrow-right.svg);
+        repeat: no-repeat;
+        position: center;
+      }
+      @include pc-media-queris {
+        top: $pc-common-margin / 2;
+        right: $pc-common-margin / 2;
+      }
+    }
+  }
+
+  &--back {
+    &::after {
+      content: "";
+      position: absolute;
+      top: $sp-common-margin / 2;
+      left: $sp-common-margin / 2;
+      height: 1.6rem;
+      width: 1rem;
+      display: inline-block;
+      background: {
+        image: url(../img/arrow-right.svg);
+        repeat: no-repeat;
+        position: center;
+      }
+      transform: rotate(180deg);
+      @include pc-media-queris {
+        top: $pc-common-margin / 2;
+        left: $pc-common-margin / 2;
+      }
+    }
+  }
+}

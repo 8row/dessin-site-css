@@ -1,0 +1,14 @@
+/**
+ * Main
+ */
+
+.l-main {
+  display: block;
+  position: relative;
+  padding: $sp-common-margin;
+  @include pc-media-queris {
+    width: $pc-width;
+    margin: 0 auto;
+    padding: $pc-common-margin 0;
+  }
+}

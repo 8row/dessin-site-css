@@ -1,0 +1,17 @@
+.u-font-bold {
+    font-weight: bold;
+}
+
+// .pc-only {
+//     display: none;
+//     @include pc-media-queris {
+//         display: block;
+//     }
+// }
+
+.u-mb {
+    margin-bottom: $sp-common-margin;
+    @include pc-media-queris {
+        margin-bottom: $pc-common-margin;
+    }
+}

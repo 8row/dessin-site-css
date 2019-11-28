@@ -1,0 +1,36 @@
+/**
+ * Tab
+ */
+
+.c-tab {
+  display: flex;
+  justify-content: space-between;
+  @include pc-media-queris {
+    width: $pc-medium-width;
+    margin: 0 auto;
+  }
+
+  &__btn {
+    border-radius: 400px;
+    color: #fff;
+    background: {
+      color: $color-base;
+    }
+
+    // &:first-child {
+    //   margin-right: $sp-common-margin;
+    //   @include pc-media-queris {
+    //     margin-right: 0;
+    //   }
+    // }
+
+    &--disable {
+      color: $color-key;
+      font-size: 1rem;
+      line-height: 1.6;
+      background: {
+        color: transparent;
+      }
+    }
+  }
+}

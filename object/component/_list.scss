@@ -1,0 +1,70 @@
+/**
+ * List
+ */
+
+.c-list-items {
+  margin: ($sp-common-margin * 4) 0;
+  overflow: visible;
+  @include pc-media-queris {
+    margin: ($pc-common-margin * 4) auto;
+  }
+
+  &--works {
+    margin-left: 20vw - $sp-common-margin;
+    width: 60vw;
+    @include pc-media-queris {
+      margin-left: ($pc-width - $pc-small-width) / 2;
+      width: $pc-small-width;
+    }
+  }
+  &--process {
+    width: 100%;
+    @include pc-media-queris {
+      width: $pc-small-width;
+    }
+  }
+
+  &__img {
+    width: inherit;
+    margin-bottom: $sp-common-margin / 4;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.2);
+    @include pc-media-queris {
+      margin-bottom: $pc-common-margin / 4;
+      box-shadow: 0px 0px 14px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &__text {
+    margin-top: $sp-common-margin / 4;
+    @include pc-media-queris {
+      margin-top: $pc-common-margin / 4;
+    }
+    &--works {
+      margin-left: -20vw;
+      padding-left: $sp-common-margin;
+      width: 100vw - $sp-common-margin;
+      @include pc-media-queris {
+        width: $pc-medium-width;
+        margin-left: -60px;
+        padding-left: 0;
+      }
+    }
+    &--process {
+      @include pc-media-queris {
+        width: $pc-medium-width;
+        margin-left: -($pc-medium-width - $pc-small-width) / 2;
+      }
+    }
+  }
+  
+  &__down-arrow {
+    img {
+      display: block;
+      width: 80%;
+      margin: $sp-common-margin auto 0;
+      @include pc-media-queris {
+        margin: $pc-common-margin auto (-$pc-common-margin * 2);
+      }
+    }
+  }
+}

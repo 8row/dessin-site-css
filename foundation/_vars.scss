@@ -1,0 +1,19 @@
+/**
+ * Vars
+ */
+
+//サイト全体で使うカラーコードの変数を指定する
+$color-base: #00e826; //背景などベースに使う色
+$color-key: #090; //テキストなどで使う濃いめの色
+$color-main-text: #333; //本文の色
+
+//サイトで使う共通のサイズ
+$pc-width: 768px; //PC表示でのブレークポイントとコンテンツのにで使う
+$pc-small-width: 300px; //PC表示での小さい幅に使う
+$pc-medium-width: 440px; //PC表示での中くらいの幅にで使う
+
+$sp-common-margin: 4vw; //スマホ表示での余白
+$pc-common-margin: 30px; //PC表示での余白
+
+$sp-gadget-width: 10vw; //スマホ表示での小さいガジェット幅
+$pc-gadget-width: 44px; //PC表示での小さいガジェット幅
